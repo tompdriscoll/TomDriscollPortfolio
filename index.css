@@ -2,17 +2,22 @@ body{
     background: #fecc99;
     background: url('./symbols.jpg') no-repeat, #fecc99;
     background-position-x: center;
+    margin: 0;
 }
 
 
 h1{
     font-size: 125px;
-    color: dodgerblue;
+    color: #0081ff;
+}
+
+span{
+    color: #004486;
 }
 
 h2{
     font-size: 50px;
-    color: tomato;
+    color: #bf1d00;
 }
 
 #intro{
@@ -24,6 +29,7 @@ h2{
 #intro-first{
     display: flex;
     margin: auto;
+ 
 }
 
 #intro-photo{
@@ -46,7 +52,7 @@ h2{
 }
 
 
-#border{width: 90%; border-bottom: 8px dashed dodgerblue; height: 10px; margin:auto;}
+#border{width: 90%; border-bottom: 8px dashed #0081ff; height: 10px; margin:auto;}
 
 #projects{
     background: #fecc99;
@@ -71,10 +77,18 @@ h2{
     width: 300px;
     height: 300px;
     overflow: hidden;
-    background: dodgerblue;
+    background: #0081ff;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1024px){
+
+    #intro{
+        width: fit-content;
+    }
+
+    #intro-first{
+        width: inherit;
+    }
     #intro h2{
         margin: auto;
         width: 75%;
@@ -82,5 +96,44 @@ h2{
 
     #intro-text{
         width: 100%;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    #intro h2{
+        margin-left: 124px;
+        font-size: 46px;
+    }
+    #intro-photo{
+        height: 300px;
+        width: 300px;
+        margin-right: -30px;
+    }
+
+    #intro-first{
+        width: fit-content;
+    }
+
+    #hi{
+        font-size:100px;
+        width: min-content;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 411px){
+
+    #projects{
+        margin: auto;
+    }
+    .project-div{
+        width: 100%;
+    }
+    .project-text{
+        width: 50%;
+    }
+    .project-video{
+        width: 50%;
     }
 }
