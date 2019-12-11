@@ -1,0 +1,74 @@
+body{
+    background: navajowhite;
+}
+
+h1{
+    font-size: 125px;
+    color: dodgerblue;
+}
+
+h2{
+    font-size: 50px;
+    color: salmon;
+}
+
+#intro{
+    display: flex;
+
+    margin: 100px auto;
+    width: fit-content;
+    
+}
+
+#intro-photo{
+    width: 500px;
+    height: 500px;
+    border-radius: 360px;
+    margin-right: -86px;
+}
+
+#intro-text h1, h2{
+    width: 573px;
+}
+
+#hi{
+    margin-top: 125px;
+    width: 573px;
+}
+
+
+#border{width: 90%; border-bottom: 8px dashed dodgerblue; height: 10px; margin:auto;}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 100px auto; */
+}
+
+.project-div{
+    display: flex;
+    margin: 25px 0;
+}
+
+.project-text{
+    width: 500px;
+}
+
+
+.project-video{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background: dodgerblue;
+}
+
+@media screen and (max-width:1020px){
+    #intro-text h2{
+        color: aqua;
+    }
+
+    #intro-text{
+        width: 100%;
+    }
+}
