@@ -72,6 +72,10 @@ h2{
     width: 500px;
 }
 
+.project-text:nth-child(2){
+    text-align: end;
+}
+
 
 .project-video{
     width: 300px;
@@ -149,7 +153,9 @@ h2{
         margin: auto;
     }
     .project-header{
-        font-size: 7vw;
+        font-size: 6vw;
+        margin: auto;
+        width: 40vw;
     }
     .project-div{
         width: 100%;
@@ -158,9 +164,11 @@ h2{
     .project-text{
         width: 50vw;
         height: 50vw;
+        background: #0081ff
     }
     .project-video{
         width: 50vw;
         height: 50vw;
+        background: black;
     }
 }
