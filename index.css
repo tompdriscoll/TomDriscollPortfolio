@@ -122,18 +122,45 @@ h2{
     }
 }
 
-@media screen and (max-width: 411px){
+@media screen and (max-width: 414px){
+    #intro{
+        margin-bottom: 24px;
+    }
+
+    #border{
+        display: none;
+    }
+    #hi{
+        margin-bottom: 12px;
+        font-size: 19vw;
+    }
+    #intro h2{
+        font-size: 6vw;
+        padding-left: calc((81vw - 180px)/2);
+        margin: 0;    
+    }
+    #intro-photo{
+        height: 200px;
+        width: 200px;
+        margin-right: -20px;
+    }
 
     #projects{
         margin: auto;
     }
+    .project-header{
+        font-size: 7vw;
+    }
     .project-div{
         width: 100%;
+        margin: 0;
     }
     .project-text{
-        width: 50%;
+        width: 50vw;
+        height: 50vw;
     }
     .project-video{
-        width: 50%;
+        width: 50vw;
+        height: 50vw;
     }
 }
