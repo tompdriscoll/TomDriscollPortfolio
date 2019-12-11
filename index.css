@@ -1,6 +1,9 @@
 body{
-    background: navajowhite;
+    background: #fecc99;
+    background: url('./symbols.jpg') no-repeat, #fecc99;
+    background-position-x: center;
 }
+
 
 h1{
     font-size: 125px;
@@ -9,15 +12,18 @@ h1{
 
 h2{
     font-size: 50px;
-    color: salmon;
+    color: tomato;
 }
 
 #intro{
-    display: flex;
-
     margin: 100px auto;
-    width: fit-content;
+    width: 987px;
     
+}
+
+#intro-first{
+    display: flex;
+    margin: auto;
 }
 
 #intro-photo{
@@ -27,19 +33,23 @@ h2{
     margin-right: -86px;
 }
 
-#intro-text h1, h2{
+#intro h2{
     width: 573px;
+    margin-left: 414px;
+    margin-top: -86px;
+    background: #fecc99;
 }
 
 #hi{
     margin-top: 125px;
-    width: 573px;
+    width: 361px;
 }
 
 
 #border{width: 90%; border-bottom: 8px dashed dodgerblue; height: 10px; margin:auto;}
 
 #projects{
+    background: #fecc99;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -47,6 +57,7 @@ h2{
 }
 
 .project-div{
+    
     display: flex;
     margin: 25px 0;
 }
@@ -63,9 +74,10 @@ h2{
     background: dodgerblue;
 }
 
-@media screen and (max-width:1020px){
-    #intro-text h2{
-        color: aqua;
+@media screen and (max-width:1000px){
+    #intro h2{
+        margin: auto;
+        width: 75%;
     }
 
     #intro-text{
