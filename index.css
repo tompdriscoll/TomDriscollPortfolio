@@ -17,6 +17,7 @@ span{
 }
 
 h2{
+    font-family: 'Gotham Medium';
     font-size: 50px;
     color: #bf1d00;
 }
@@ -63,14 +64,24 @@ h2{
     background: #fecc99;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+   
     /* margin: 100px auto; */
 }
 
 .project-div{
-    
     display: flex;
     margin: 25px 0;
+    background: tomato;
+    border-radius: 0 20px 20px 0;
+    width: 80%;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.project-div:nth-of-type(2), :nth-of-type(4){
+    border-radius: 20px 0 0 20px;
+    background: dodgerblue;
+    margin-left: auto;
 }
 
 .project-text{
@@ -81,12 +92,14 @@ h2{
     text-align: end;
 }
 
+.project-header:nth-of-type(1){
+    color: #004486
+}
 
 .project-video{
-    width: 300px;
-    height: 300px;
+    width: 300px;  
     overflow: hidden;
-    background: #0081ff;
+    max-height: 300px;
 }
 
 @media screen and (max-width:1024px){
