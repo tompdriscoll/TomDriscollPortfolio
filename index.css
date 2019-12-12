@@ -172,6 +172,7 @@ h2{
 
     #projects{
         margin: auto;
+        background: linear-gradient(90deg,tomato 50%, dodgerblue 50%)
     }
     .project-header{
         font-size: 6vw;
