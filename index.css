@@ -22,6 +22,13 @@ h2{
     color: #bf1d00;
 }
 
+a{
+    font-family: 'Gotham Medium';
+    color: white;
+    
+    height: 300px; 
+}
+
 #intro{
     margin: 100px auto;
     width: 987px;
@@ -49,7 +56,8 @@ h2{
 }
 
 .project-description{
-    color: dodgerblue;
+    color: #004486;
+    
 }
 
 #hi{
@@ -71,17 +79,19 @@ h2{
 .project-div{
     display: flex;
     margin: 25px 0;
-    background: tomato;
+    background: #ff6347;
     border-radius: 0 20px 20px 0;
     width: 80%;
     justify-content: space-evenly;
     overflow: hidden;
+    animation: 1s ease-in 0s 1 slideInFromRight;
 }
 
 .project-div:nth-of-type(2), :nth-of-type(4){
     border-radius: 20px 0 0 20px;
     background: dodgerblue;
     margin-left: auto;
+    animation: 1s ease-in 0s 1 slideInFromLeft;
 }
 
 .project-text{
@@ -90,6 +100,10 @@ h2{
 
 .project-text:nth-child(2){
     text-align: end;
+}
+
+.project-header{
+    margin-bottom: 0;
 }
 
 .project-header:nth-of-type(1){
@@ -201,3 +215,23 @@ h2{
     font-family: 'Gotham Medium';
     src: url('./Gotham\ Medium\ Regular.ttf')
 }
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
