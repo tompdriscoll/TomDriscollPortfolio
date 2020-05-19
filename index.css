@@ -65,6 +65,9 @@ a{
     width: 361px;
 }
 
+.hidden{
+    display: none;
+}
 
 #border{width: 90%; border-bottom: 8px dashed #0081ff; height: 10px; margin:auto;}
 
@@ -78,20 +81,21 @@ a{
 
 .project-div{
     display: flex;
-    margin: 25px 0;
+    margin: 20px 0;
     background: #ff6347;
+    /* border: 5px solid  #ff6347; */
     border-radius: 0 20px 20px 0;
     width: 80%;
     justify-content: space-evenly;
     overflow: hidden;
-    animation: 1s ease-in 0s 1 slideInFromRight;
 }
 
 .project-div:nth-of-type(2), :nth-of-type(4){
+    
     border-radius: 20px 0 0 20px;
     background: dodgerblue;
     margin-left: auto;
-    animation: 1s ease-in 0s 1 slideInFromLeft;
+    /* animation: 1s ease-in 0s 1 slideInFromLeft; */
 }
 
 .project-text{
@@ -111,9 +115,9 @@ a{
 }
 
 .project-video{
-    width: 300px;  
+    width: 200px;  
     overflow: hidden;
-    max-height: 300px;
+    max-height: 200px;
 }
 
 @media screen and (max-width:1024px){
@@ -216,22 +220,46 @@ a{
     src: url('./Gotham\ Medium\ Regular.ttf')
 }
 
+.hidden-left{
+    transform: translateX(-100%);
+    background: #fecc99;
+}
+
+.regular-left{
+    background: #ff6347;
+    animation: .75s ease-in 0s 1 slideInFromLeft;;
+}
+
+.hidden-right{
+    transform: translateX(100%);
+    background: #fecc99;
+}
+
+.regular-right{
+    background: #0081ff;
+    animation: .75s ease-in 0s 1 slideInFromRight;;
+}
+
 @keyframes slideInFromRight {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(100%);
+      background: #fecc99;
     }
     100% {
       transform: translateX(0);
+      background: #0081ff;
     }
   }
 
   @keyframes slideInFromLeft {
     0% {
-      transform: translateX(100%);
+      transform: translateX(-100%);
       opacity: 0;
+     
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(0%);
       opacity: 1;
+      
     }
   }
